@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* class selector  */
+.decendent{
+    background-color: gray;
+}
+
+/* child selector  */
+.decendent > p{
+        color: blue;
+        font-size: medium;
+}
+
+/* desendant selector  */
+.nesteddiv p{
+    color: red;
+}
+
+/* html tag selector  */
+span{
+    color: gray;
+}
+ 
+/* id selector */
+#child{
+    color: green;
+}
+
+
+/* attribute selector  */
+/* 1. Attribute Exists Selector */
+input[type] {
+    border: 1px solid black;
+}
+
+/* 2. Attribute Equals Selector */
+a[href="https://www.example.com"] {
+    color: blue;
+}
+
+/* 3. Attribute Contains Selector */
+input[type*="text"] {
+    background-color: #f0f0f0;
+}
+
+/* 4. Attribute Starts With Selector */
+a[href^="https://"] {
+    color: green;
+}
+
+/* 5. Attribute Ends With Selector */
+a[href$=".pdf"] {
+    text-decoration: underline;
+}
+
+
+/* psuedo selectors.. */
+
+/* agr visit kiya ho link ko  */
+a:visited{
+    color: red;
+}
+
+/* agr kisi link visit nahi kiya ho  */
+a:link{
+    color: blue;
+}
+
+a:active{
+    background-color: black;
+}
+
+a:hover{
+    font-weight: 800;
+}
+
+/* ye psuedo usi pe apply hoga jo bhi p uske parent ka first child hoga  */
+p:first-child{
+    color:  red;
+}
+
+/* psudo element selector  */
+p::before{
+    content: " * ";
+    color: red;
+}
+p::after{
+    content: " * ";
+    color: red;
+}
